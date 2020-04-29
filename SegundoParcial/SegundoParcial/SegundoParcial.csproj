@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaDeDiseno">
+      <HintPath>..\..\..\..\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDiseno">
+      <HintPath>Y:\Google Drive\Bienestar S.A\Formación\DLLS\Seguridad\CapaDiseno\bin\Debug\CapaDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVista">
+      <HintPath>..\..\..\..\ComboAuto\CapaVista\bin\Debug\CapaVista.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,16 +55,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Conexion\conexion.cs" />
+    <Compile Include="Conexion\transaccion.cs" />
+    <Compile Include="Mantenimientos\Forms\Frm_Mantenimiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Mantenimientos\Forms\Frm_Mantenimiento.Designer.cs">
+      <DependentUpon>Frm_Mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Procesos\Cls_Mantenimientos.cs" />
+    <Compile Include="MDI_SegundoParcial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_SegundoParcial.Designer.cs">
+      <DependentUpon>MDI_SegundoParcial.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Mantenimientos\Forms\Frm_Mantenimiento.resx">
+      <DependentUpon>Frm_Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_SegundoParcial.resx">
+      <DependentUpon>MDI_SegundoParcial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +100,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\019-idea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\026-calendar-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\027-shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\046-agenda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\059-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\059-file1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\065-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\066-edit-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\083-floppy-disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\091-trolley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\092-package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\094-hammer-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\108-inbox-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\149-notepad-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\159-pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\179-open-book-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\191-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\223-trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\243-exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoSCM.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
