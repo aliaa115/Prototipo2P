@@ -1,0 +1,3 @@
+﻿1>------ Operación Compilar iniciada: proyecto: Prototipo2P, configuración: Debug Any CPU ------
+1>  Prototipo2P -> \\Mac\Home\Documents\Universidad\9no somestre\042 Ingenieria de Software\Segundo Parcial\github\Prototipo2P\SegundoParcial\Prototipo2P\bin\Debug\SegundoParcial.exe
+========== Compilar: 1 correctos, 0 incorrectos, 0 actualizados, 0 omitidos ==========
