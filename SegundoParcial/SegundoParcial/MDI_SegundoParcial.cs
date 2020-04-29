@@ -12,10 +12,10 @@ namespace SegundoParcial
 
         string usuario;
 
-        string nombreBd = "ERP";
+        string nombreBd = "sic";
 
-        //Color color = ColorTranslator.FromHtml("#FFCC66");
-        Color color = Color.Aquamarine;
+        Color color = ColorTranslator.FromHtml("#8FD044");
+        //Color color = Color.Aquamarine;
 
         public MDI_SegundoParcial()
         {
@@ -87,7 +87,6 @@ namespace SegundoParcial
 
         private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -135,6 +134,36 @@ namespace SegundoParcial
             MDI_Seguridad seguridad = new MDI_Seguridad(Lbl_usuario.Text);
             seguridad.lbl_nombreUsuario.Text = Lbl_usuario.Text;
             seguridad.ShowDialog();
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mant(1);
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mant(2);
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mant(3);
+        }
+
+        private void lineasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mant(4);
+        }
+
+        private void marcasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mant(5);
+        }
+
+        private void vendedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mant(6);
         }
     }
 }

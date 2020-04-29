@@ -69,7 +69,7 @@ namespace SegundoParcial.Mantenimientos.Forms
 
         private void Nav_Mantenimiento_Load(object sender, EventArgs e)
         {
-            string aplicacionActiva = "1001";
+            string aplicacionActiva = "1";
             Nav_Mantenimiento.ObtenerIdUsuario(usuario); // Pasa el parametro del usuario
             Nav_Mantenimiento.botonesYPermisosInicial(usuario, aplicacionActiva); // Consulta permisos al iniciar
             Nav_Mantenimiento.ObtenerIdAplicacion(aplicacionActiva);// Pasa el id de la aplicacion actual
